@@ -35,9 +35,10 @@ public class BasicOperations
         object oTestEnum1Second = TestEnum1.SecondEnum;
         object oTestEnum2Second = TestEnum2.SecondEnum;
         object? oNull = null;
-
+        
         Assert.Equal(0, TestEnum1.SecondEnum.CompareTo(oTestEnum1Second));
         Assert.Equal(1,TestEnum1.SecondEnum.CompareTo(oTestEnum1First));
+        Assert.Throws<ArgumentException>(() =>TestEnum1.SecondEnum.CompareTo(new object()));
         Assert.Throws<ArgumentException>(() => TestEnum1.SecondEnum.CompareTo(oTestEnum2Second));
         Assert.Equal(1, TestEnum1.SecondEnum.CompareTo(oNull));
         Assert.Equal(-1,TestEnum1.FirstEnum.CompareTo(oTestEnum1Second));

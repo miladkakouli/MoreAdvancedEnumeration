@@ -25,7 +25,7 @@ public abstract class Enumeration : IComparable
 
     public override bool Equals(object? obj)
     {
-        if (!(obj is Enumeration otherValue))
+        if (obj is not Enumeration otherValue)
         {
             return false;
         }
@@ -39,8 +39,7 @@ public abstract class Enumeration : IComparable
     public int CompareTo(object? obj)
     {
         if (obj == null) return 1;
-        Enumeration? o = obj as Enumeration;
-        if (o == null || o.GetType() != GetType())
+        if (obj is not Enumeration o || o.GetType() != GetType())
             throw new ArgumentException("Object is not a " + this.GetType());
         return _id.CompareTo(o._id);
     }
@@ -81,8 +80,8 @@ public abstract class Enumeration : IComparable
         return GetAll<T>().First(predicate);
     }
 
-    public static bool operator ==(Enumeration? a, Enumeration? b)
-        => a!.Equals(b!);
+    public static bool operator ==(Enumeration a, Enumeration b)
+        => a.Equals(b);
 
     public static bool operator ==(Enumeration a, string b)
     {
