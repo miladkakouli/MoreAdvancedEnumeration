@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoreAdvancedEnumeration", "MoreAdvancedEnumeration\MoreAdvancedEnumeration.csproj", "{FB79D28E-EBEE-442C-B874-D3A7A3A5942A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoreAdvancedEnumeration.Tests", "MoreAdvancedEnumeration.Tests\MoreAdvancedEnumeration.Tests.csproj", "{F65A593D-5DFC-497C-BF19-CAA4E9E27C37}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FB79D28E-EBEE-442C-B874-D3A7A3A5942A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB79D28E-EBEE-442C-B874-D3A7A3A5942A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB79D28E-EBEE-442C-B874-D3A7A3A5942A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB79D28E-EBEE-442C-B874-D3A7A3A5942A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F65A593D-5DFC-497C-BF19-CAA4E9E27C37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F65A593D-5DFC-497C-BF19-CAA4E9E27C37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F65A593D-5DFC-497C-BF19-CAA4E9E27C37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F65A593D-5DFC-497C-BF19-CAA4E9E27C37}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
